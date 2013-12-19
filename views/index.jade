@@ -1,10 +1,14 @@
 extends layout
 
 block content
-  h1= title
-  p Now Playing 
-  p
-    span.now-playing Nothing is playing
-  p Last Played 
-  p
-    span.last-played Chemical - Tigers Jaw
+  .spotify-banner
+    .spotify-banner__logo
+      img(src='/images/logo.png')
+    .spotify-banner__content.spotify-banner__content--now-playing
+      p Now Playing:
+      p
+        strong.now-playing Nothing is playing
+    .spotify-banner__content.spotify-banner__content--last-playing
+      p Last Played:
+      p
+        strong.last-played Nothing was playing

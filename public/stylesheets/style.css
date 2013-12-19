@@ -1,10 +1,31 @@
 body {
-  padding: 50px;
+  margin: 0;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-color: #0D0D0D;
-  color: #FFFFFF;
 }
 
-a {
-  color: #00B7FF;
+.spotify-banner {
+  padding: 1.5em 0;
+}
+.spotify-banner:after,
+.spotify-banner:before {
+  content: '';
+  display: table-cell;
+}
+.spotify-banner:after {
+  clear: both;
+}
+
+.spotify-banner__logo {
+  float: left;
+  margin-right: 1em;
+}
+.spotify-banner__content p {
+  margin: 0;
+  font-size: 30px;
+  line-height: 32px;
+  color: #656565;
+  text-transform: uppercase;
+}
+.spotify-banner__content--last-playing {
+  display: none;
 }
