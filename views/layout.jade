@@ -13,11 +13,11 @@ html
 
       var socket = io.connect()
       socket.on('lastPlayed', function (data) {
-        $('span.last-played').text(data.name + ' • ' + data.artist["#text"])
+        $('.js-last-played').text(data.name + ' • ' + data.artist["#text"])
       });
 
       socket.on('nowPlaying', function (data) {
-        $('span.now-playing').text(data.name + ' • ' + data.artist["#text"])
+        $('.js-now-playing').text(data.name + ' • ' + data.artist["#text"])
       });
 
     })
