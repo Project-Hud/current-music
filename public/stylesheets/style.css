@@ -25,6 +25,9 @@ body {
   line-height: 32px;
   color: #656565;
   text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .spotify-banner__content--last-playing {
   display: none;
