@@ -29,6 +29,6 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.spotify-banner__content--last-playing {
+.spotify-banner__content--now-playing {
   display: none;
 }
