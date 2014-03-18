@@ -1,0 +1,7 @@
+body{margin:0;font:14px "Lato",Helvetica,Arial,sans-serif}
+.spotify-banner{padding:1.5em 0}
+.spotify-banner:after,.spotify-banner:before{content:'';display:table-cell}
+.spotify-banner:after{clear:both}
+.spotify-banner__logo{float:left;margin-right:1em}
+.spotify-banner__content p{margin:0;font-size:30px;line-height:32px;color:#656565;text-transform:uppercase;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.spotify-banner__content--now-playing{display:none}
