@@ -30,7 +30,7 @@ widget.on('started', function () {
   })
 
   trackStream.on('lastPlayed', function(track) {
-    console.log(track)
+    console.log(track.artist['#text'] + ': ' + track.name)
     trackCache.last = track
     io.sockets.emit('lastPlayed', track)
   })
