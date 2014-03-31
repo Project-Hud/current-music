@@ -1,34 +1,34 @@
-body {
-  margin: 0;
-  font: 14px "Lato", Helvetica, Arial, sans-serif;
-}
+body
+  opacity 0
+  margin 0
+  font 16px "FS Emeric Book", Helvetica, Arial, sans-serif
+  transition opacity .3s ease-in-out
+  color #9c9c9c
+  .wf-active &
+    opacity 1
 
-.spotify-banner {
-  padding: 1.5em 0;
-}
-.spotify-banner:after,
-.spotify-banner:before {
-  content: '';
-  display: table-cell;
-}
-.spotify-banner:after {
-  clear: both;
-}
+.music-banner
+  padding 1.5em 0
 
-.spotify-banner__logo {
-  float: left;
-  margin-right: 1em;
-}
-.spotify-banner__content p {
-  margin: 0;
-  font-size: 30px;
-  line-height: 32px;
-  color: #656565;
-  text-transform: uppercase;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.spotify-banner__content--now-playing {
-  display: none;
-}
+  &:after,
+  &:before
+    content ''
+    display table-cell
+  &:after
+    clear both
+
+.music-banner__content
+  margin-top 2px
+  &--now-playing
+    display none
+  p
+    margin 0
+    font-size 1.875em
+    line-height 1.15
+    color #656565
+    white-space nowrap
+    overflow hidden
+    text-overflow ellipsis
+    &.small
+      margin-bottom -3px
+      font-size 1.4375em

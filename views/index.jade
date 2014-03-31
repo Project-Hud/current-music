@@ -1,14 +1,14 @@
 extends layout
 
 block content
-  .spotify-banner
-    .spotify-banner__logo
-      img(src='/images/logo.png')
-    .spotify-banner__content.spotify-banner__content--now-playing
-      p Now Playing:
+  .music-banner
+    //- .music-banner__logo
+    //-   img(src='/images/logo.png')
+    .music-banner__content.music-banner__content--now-playing
+      p.small Now Playing:
       p
         strong.now-playing.js-now-playing Nothing is playing
-    .spotify-banner__content.spotify-banner__content--last-playing
-      p Last Played:
+    .music-banner__content.music-banner__content--last-playing
+      p.small Last Played:
       p
         strong.last-played.js-last-played Nothing was playing
